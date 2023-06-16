@@ -1,16 +1,14 @@
 package max_saraly
 
-import "strings"
+import (
+	"sort"
+	"strings"
+)
 
 func largestNumber(nums []string) string {
-
-	for j := 0; j < len(nums)-1; j++ {
-		for i := 0; i < len(nums)-1; i++ {
-			if nums[i]+nums[i+1] < nums[i+1]+nums[i] {
-				nums[i], nums[i+1] = nums[i+1], nums[i]
-			}
-		}
-	}
+	sort.Slice(nums, func(i, j int) bool {
+		return nums[i]+nums[j] > nums[j]+nums[i]
+	})
 
 	result := strings.Join(nums, "")
 
