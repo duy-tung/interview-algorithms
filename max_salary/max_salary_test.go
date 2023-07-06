@@ -1,4 +1,4 @@
-package max_saraly
+package max_salary
 
 import "testing"
 
