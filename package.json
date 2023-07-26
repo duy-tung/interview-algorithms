@@ -1,0 +1,38 @@
+{
+    "name": "interview",
+    "version": "1.0.0",
+    "description": "interview",
+    "scripts": {
+        "test": "jest"
+    },
+    "keywords": [
+        "typescript",
+        "jest",
+        "testing"
+    ],
+    "author": "duy-tung",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/jest": "^27.5.2",
+        "jest": "^27.5.1",
+        "ts-jest": "^27.1.5",
+        "typescript": "^4.3.5"
+    },
+    "jest": {
+        "transform": {
+            "^.+\\.(ts|tsx)$": "ts-jest"
+        },
+        "testEnvironment": "node",
+        "moduleFileExtensions": [
+            "ts",
+            "tsx",
+            "js",
+            "jsx",
+            "json",
+            "node"
+        ],
+        "testMatch": [
+            "**/*_test.ts"
+        ]
+    }
+}
